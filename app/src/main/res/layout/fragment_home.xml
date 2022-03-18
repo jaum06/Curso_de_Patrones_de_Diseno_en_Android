@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <View
+            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@color/primary"
@@ -254,5 +255,16 @@
             tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/favorite_transfer_row"
             tools:orientation="horizontal" />
+
+        <ProgressBar
+            android:id="@+id/homeLoader"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
