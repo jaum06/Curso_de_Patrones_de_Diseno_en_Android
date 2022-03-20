@@ -7,9 +7,9 @@ import com.cristianvillamil.platziwallet.R
 import com.cristianvillamil.platziwallet.ui.home.FavoriteTransfer
 import com.squareup.picasso.Picasso
 
-class FavoriteTransferViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+class FavoriteTransferViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
 
-    fun bind(item: FavoriteTransfer) {
+    fun bind(item: FavoriteTransfer){
         val photoImageView = view.findViewById<ImageView>(R.id.profilePhotoImageView)
         Picasso.get().load(item.photoUrl).into(photoImageView)
     }
